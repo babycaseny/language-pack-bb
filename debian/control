@@ -1,0 +1,20 @@
+Source: language-pack-bb
+Section: translations
+Priority: optional
+Maintainer: Tom K. C. Chiu <babycaseny@gmail.com>
+Build-Depends-Indep: gettext
+Build-Depends: debhelper (>= 8)
+Standards-Version: 3.9.6
+
+Package: language-pack-bb
+Architecture: all
+Pre-Depends: dpkg (>= 1.16.1), ${misc:Pre-Depends}
+Depends: ${misc:Depends}, language-pack-bb-base (>= 1:15.04+20141201)
+Replaces: language-pack-bb-base, language-pack-bb-base (<< ${binary:Version}), language-pack-gnome-en-base (<< ${binary:Version}), language-pack-kde-en-base (<< ${binary:Version}), language-pack-en (<< ${binary:Version}),  language-pack-gnome-en (<< ${binary:Version}), language-pack-kde-en (<< ${binary:Version})
+Description: translation updates for language Babyish
+ Translation data updates for all supported packages for:
+ Babyish
+ .
+ language-pack-bb-base provides the bulk of translation data
+ and is updated only seldom. This package provides frequent translation
+ updates.
