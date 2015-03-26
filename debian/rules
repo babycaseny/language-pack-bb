@@ -1,7 +1,7 @@
 #!/usr/bin/make -f
 
-# Uncomment this to turn on verbose mode.
-#export DH_VERBOSE=1
+# Uncomment the line below to turn on verbose mode.
+export DH_VERBOSE=1
 
 PKGNAME=$(shell grep "^Package: " debian/control | head -1 | cut -f 2 -d\ )
 PKG=$(shell pwd)/debian/$(PKGNAME)
